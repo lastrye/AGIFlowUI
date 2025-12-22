@@ -17,7 +17,10 @@ from pydantic import BaseModel
 
 from comfy import utils
 from comfy_api.latest import IO
-from server import PromptServer
+try:
+    from server import PromptServer
+except ImportError:
+    from web_source.usersocket.server import PromptServer
 
 from . import request_logger
 from ._helpers import (

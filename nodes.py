@@ -2173,6 +2173,7 @@ async def load_custom_node(module_path: str, ignore=set(), module_parent="custom
             web_dir = os.path.abspath(os.path.join(module_dir, getattr(module, "WEB_DIRECTORY")))
             if os.path.isdir(web_dir):
                 EXTENSION_WEB_DIRS[module_name] = web_dir
+                print(f"DEBUG: Registered web folder for {module_name}: {web_dir}")
 
         # V1 node definition
         if hasattr(module, "NODE_CLASS_MAPPINGS") and getattr(module, "NODE_CLASS_MAPPINGS") is not None:

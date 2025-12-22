@@ -7,6 +7,7 @@ __pycache__/
 /temp/
 /custom_nodes/
 !custom_nodes/example_node.py.example
+/web_source/
 extra_model_paths.yaml
 /.vs
 .vscode/
@@ -24,3 +25,4 @@ web_custom_versions/
 openapi.yaml
 filtered-openapi.yaml
 uv.lock
+temp_pnpm/
